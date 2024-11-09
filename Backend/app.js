@@ -7,7 +7,13 @@ const dbConnection = require('./database/dbConnection')
 const cors = require('cors')
 const Reservation = require('./models/reservationSchema')
 
-app.use(cors())
+app.use(cors(
+    {
+        origin:['https://restorant-lac.vercel.app'],
+        methods:["POST"],
+        credentials:true,
+    }
+))
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
