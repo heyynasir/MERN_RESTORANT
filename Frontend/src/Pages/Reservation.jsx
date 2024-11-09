@@ -19,7 +19,7 @@ function Reservation() {
     const handleSubmit = async (e)=>{
         e.preventDefault()
         try{
-            const data = await axios.post('http://localhost:3000/add',
+            const data = await axios.post('https://mern-restorant-1.onrender.com/add',
                 {firstName,lastName,email,phone,time,date}
             );
                 console.log(data)
