@@ -1,0 +1,1 @@
+mongodb+srv://heyynasir:<db_password>@cluster0.uuptu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
